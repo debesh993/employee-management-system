@@ -25,10 +25,10 @@ const Attendance_employee = () => {
             })
             if (response.data.success) {
                 if (skip === 0) {
-                    console.log(response.data.groupData)
+                    // console.log(response.data.groupData)
                     setReport(response.data.groupData)
                 } else {
-                    console.log(response.data.groupData)
+                    // console.log(response.data.groupData)
                     setReport((prevData) => ({ ...prevData, ...response.data.groupData }))
                 }
             }
