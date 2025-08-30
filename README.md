@@ -84,7 +84,7 @@ Built with a clean user interface and role-based access (Admin & Employee), this
 ---
 
 ## 📸 Screenshots
-(Add screenshots of dashboards, employee management, leave system, etc.)  
+ 
 Example:  
 ![Login](./Frontend_react/screenshots_admin/login.png)
 ![Admin Dashboard](./Frontend_react/screenshots_admin/dashboard.png)  
