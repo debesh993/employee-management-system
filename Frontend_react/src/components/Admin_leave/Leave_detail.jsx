@@ -12,7 +12,7 @@ const Leave_detail = () => {
         const fetchLeave = async () => {
 
             try {
-                const response = await axios.get(`http://localhost:5000/api/leave/detail/${id}`, {
+                const response = await axios.get(`https://employee-management-system-api.vercel.app/api/leave/detail/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
@@ -34,7 +34,7 @@ const Leave_detail = () => {
     }, [])
     const changeStatus=async(id,status)=>{
         try {
-                const response = await axios.put(`http://localhost:5000/api/leave/${id}`,{status}, 
+                const response = await axios.put(`https://employee-management-system-api.vercel.app/api/leave/${id}`,{status}, 
                     {
                         headers: {
                             "Authorization": `Bearer ${localStorage.getItem('token')}`
@@ -61,7 +61,7 @@ const Leave_detail = () => {
                     <div className="card-body" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <div>
                             <img
-                                src={leave.employeeId.userId.profileimage ? `http://localhost:5000/${leave.employeeId.userId.profileimage}` : image1}
+                                src={leave.employeeId.userId.profileimage ? `https://employee-management-system-api.vercel.app/${leave.employeeId.userId.profileimage}` : image1}
                                 alt="Employee"
                                 style={{ width: "19vw", height: "19vw", objectFit: "cover", borderRadius: "50%" }}
 

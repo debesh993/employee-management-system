@@ -18,7 +18,7 @@ const Edit_employee = () => {
     useEffect(() => {
         const fetchEmployee = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/employee/${id}`, {
+                const response = await axios.get(`https://employee-management-system-api.vercel.app/api/employee/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
@@ -57,7 +57,7 @@ const Edit_employee = () => {
         e.preventDefault();
         // console.log("Form data before submit:", formData);
         try {
-            const response = await axios.put(`http://localhost:5000/api/employee/${id}`, employee, {
+            const response = await axios.put(`https://employee-management-system-api.vercel.app/api/employee/${id}`, employee, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

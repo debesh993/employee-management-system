@@ -22,7 +22,7 @@ const Department_information = () => {
         const confirm = window.confirm("Do you wnat to delete?")
         if (confirm) {
             try {
-                const response = await axios.delete(`http://localhost:5000/api/department/${id}`, {
+                const response = await axios.delete(`https://employee-management-system-api.vercel.app/api/department/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }

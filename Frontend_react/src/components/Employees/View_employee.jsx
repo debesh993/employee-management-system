@@ -11,7 +11,7 @@ const View_employee = () => {
         const fetchEmployee = async () => {
 
             try {
-                const response = await axios.get(`http://localhost:5000/api/employee/${id}`, {
+                const response = await axios.get(`https://employee-management-system-api.vercel.app/api/employee/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
@@ -42,7 +42,7 @@ const View_employee = () => {
                 <div className="card-body" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                     <div>
                         <img
-                            src={employee.userId.profileimage ? `http://localhost:5000/${employee.userId.profileimage}` : image1}
+                            src={employee.userId.profileimage ? `https://employee-management-system-api.vercel.app/${employee.userId.profileimage}` : image1}
                             alt="Employee"
                             style={{ width: "19vw", height: "19vw", objectFit: "cover", borderRadius: "50%" }}
 

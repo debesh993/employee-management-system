@@ -13,7 +13,7 @@ function Dash_board_overview() {
     useEffect(()=>{
         const fetchSummary=async()=>{
             try{
-                 const summary=await axios.get('http://localhost:5000/api/dashboard/summary',{
+                 const summary=await axios.get('https://employee-management-system-api.vercel.app/api/dashboard/summary',{
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }

@@ -14,7 +14,7 @@ const List_Employee = () => {
         const fetchEmployees = async () => {
             setEmpLoading(true);
             try {
-                const response = await axios.get('http://localhost:5000/api/employee', {
+                const response = await axios.get('https://employee-management-system-api.vercel.app/api/employee', {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
@@ -104,7 +104,7 @@ const List_Employee = () => {
                                     <td>{index + 1}</td>
                                     <td>
                                         <img
-                                            src={de.image ? `http://localhost:5000/${de.image}` : image1}
+                                            src={de.image ? `https://employee-management-system-api.vercel.app/${de.image}` : image1}
                                             alt="Employee"
                                             style={{ width: "35px", height: "35px", objectFit: "cover", borderRadius: "50%" }}
 

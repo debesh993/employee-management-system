@@ -20,7 +20,7 @@ const Add_salary = () => {
         // setDepLoading(true);
         // console.log(id)
         try {
-            const response = await axios.get(`http://localhost:5000/api/employee/department/${id}`, {
+            const response = await axios.get(`https://employee-management-system-api.vercel.app/api/employee/department/${id}`, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }
@@ -51,7 +51,7 @@ const Add_salary = () => {
         // console.log("handlesubmit is running");
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/salary/add', employees, {
+            const response = await axios.post('https://employee-management-system-api.vercel.app/api/salary/add', employees, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

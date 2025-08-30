@@ -14,7 +14,7 @@ const Attendance_report = () => {
             if (dateFilter) {
                 query.append("date", dateFilter)
             }
-            const response = await axios.get(`http://localhost:5000/api/attendance/report?${query.toString()}`, {
+            const response = await axios.get(`https://employee-management-system-api.vercel.app/api/attendance/report?${query.toString()}`, {
                 headers: {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
                 }

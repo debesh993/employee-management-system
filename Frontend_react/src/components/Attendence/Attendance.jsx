@@ -13,7 +13,7 @@ const Attendance = () => {
     const fetchAttendance = async () => {
             setEmpLoading(true);
             try {
-                const response = await axios.get('http://localhost:5000/api/attendance', {
+                const response = await axios.get('https://employee-management-system-api.vercel.app/api/attendance', {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
@@ -64,7 +64,7 @@ const Attendance = () => {
 
     const handleAtt=async({status,employeeId})=>{
         console.log(employeeId)
-        const response=await axios.put(`http://localhost:5000/api/attendance/update/${employeeId}`,{status}, {
+        const response=await axios.put(`https://employee-management-system-api.vercel.app/api/attendance/update/${employeeId}`,{status}, {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
