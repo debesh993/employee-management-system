@@ -21,7 +21,7 @@ const Employee_leaves = () => {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
                 })
-                console.log(response.data)
+                // console.log(response.data)
                 if (response.data.success) {
                     setnewLeave(response.data.leaves);
                 }
