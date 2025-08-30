@@ -1,0 +1,10 @@
+.card-body img{
+            height:24vmax;
+            width: 24vmax;
+            border-radius: 50%;
+        }
+.card-body{
+            display:flex;
+            align-items: center;
+            column-gap: 10px;
+        }
