@@ -104,7 +104,7 @@ const List_Employee = () => {
                                     <td>{index + 1}</td>
                                     <td>
                                         <img
-                                            src={de.image ? `https://employee-management-system-api.vercel.app/${de.image}` : image1}
+                                            src={de.image ? `https://employee-management-system-api.vercel.app/uploads/${de.image}` : image1}
                                             alt="Employee"
                                             style={{ width: "35px", height: "35px", objectFit: "cover", borderRadius: "50%" }}
 

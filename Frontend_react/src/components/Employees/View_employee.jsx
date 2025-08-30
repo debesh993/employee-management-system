@@ -42,7 +42,7 @@ const View_employee = () => {
                 <div className="card-body" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                     <div>
                         <img
-                            src={employee.userId.profileimage ? `https://employee-management-system-api.vercel.app/${employee.userId.profileimage}` : image1}
+                            src={employee.userId.profileimage ? `https://employee-management-system-api.vercel.app/uploads/${employee.userId.profileimage}` : image1}
                             alt="Employee"
                             style={{ width: "19vw", height: "19vw", objectFit: "cover", borderRadius: "50%" }}
 

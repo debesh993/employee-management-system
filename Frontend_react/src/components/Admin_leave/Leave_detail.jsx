@@ -61,7 +61,7 @@ const Leave_detail = () => {
                     <div className="card-body" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <div>
                             <img
-                                src={leave.employeeId.userId.profileimage ? `https://employee-management-system-api.vercel.app/${leave.employeeId.userId.profileimage}` : image1}
+                                src={leave.employeeId.userId.profileimage ? `https://employee-management-system-api.vercel.app/uploads/${leave.employeeId.userId.profileimage}` : image1}
                                 alt="Employee"
                                 style={{ width: "19vw", height: "19vw", objectFit: "cover", borderRadius: "50%" }}
 
