@@ -30,7 +30,7 @@ const login = async (req, res) => {
         });
     } catch (error) {
         console.error("Server Error:", error);
-        return res.status(500).json({ success: false, error: error });
+        return res.status(500).json({ success: false, error: "Server Error" });
     }
 };
 const verify=(req,res)=>{

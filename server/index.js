@@ -15,7 +15,7 @@ connecttodatabase()
 
 const app=express()
 app.use(cors({
-    origin:"*",
+    origin:"employee-management-system-frontend-sand.vercel.app",
     credentials:true
 }))
 app.use(express.json())
