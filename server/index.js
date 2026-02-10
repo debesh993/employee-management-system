@@ -10,7 +10,6 @@ import dashBoardrouter from './routes/dashboard.js'
 import attendanceRouter from './routes/attendance.js'
 import connecttodatabase from './db/db.js'
 import dotenv from "dotenv";
-import path from "path";
 dotenv.config();
 connecttodatabase()
 
@@ -21,8 +20,6 @@ app.use(cors({
 }))
 app.use(express.json())
 app.use(express.static('public/uploads'))
-// app.use("/uploads", express.static("public/uploads"))
-// app.use("/uploads", express.static(path.join(process.cwd(), "public/uploads")));
 app.use('/api/auth',authRouter)
 app.use('/api/department',departmentRouter)
 app.use('/api/employee',employeeRouter)
