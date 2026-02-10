@@ -19,7 +19,7 @@ const app=express()
 //     credentials:true
 // }))
 app.use(cors({
-  origin: "https://employee-management-system-frontend-sand.vercel.app",
+  origin: "https://employee-management-system-frontend-sand.vercel.app/",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
