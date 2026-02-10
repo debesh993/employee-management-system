@@ -14,10 +14,16 @@ dotenv.config();
 connecttodatabase()
 
 const app=express()
+import cors from "cors";
+
 app.use(cors({
-    origin:"employee-management-system-frontend-sand.vercel.app",
-    credentials:true
-}))
+  origin: [
+    "https://employee-management-system-frontend-8hgajfn8b.vercel.app",
+    "https://employee-management-system-frontend-sand.vercel.app"
+  ],
+  credentials: true
+}));
+
 app.use(express.json())
 app.use(express.static('public/uploads'))
 app.use('/api/auth',authRouter)
