@@ -30,6 +30,6 @@ app.use('/api/dashboard',dashBoardrouter)
 app.use('/api/attendance',attendanceRouter)
 
 
-app.listen(process.env.PORT,()=>{
+app.listen(5000,()=>{
     console.log(`server is running on port ${process.env.PORT}`)
 })
